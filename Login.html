@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<title> Responsive Login and Signup Form </title>-->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="Login.css">
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                        
+    </head>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="index.html" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="data:image/png;base64,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" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Signup</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Create password" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="index.html" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="data:image/png;base64,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" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script src="Login.js"></script>
+    </body>
+</html>
+
